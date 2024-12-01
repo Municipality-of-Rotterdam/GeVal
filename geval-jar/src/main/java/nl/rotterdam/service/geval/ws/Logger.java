@@ -21,7 +21,7 @@ public class Logger {
     private static final org.slf4j.Logger LOGGER = LoggerFactory.getLogger(RequestLogger.class);
 
     @Value("${geval.log.requests}")
-    private boolean loggingOn;
+    private boolean loggingOn = true;
 
     @Value("${geval.log.payload-limit: 1000}")
     private int payloadLimit = DEFAULT_PAYLOAD_LIMIT;
